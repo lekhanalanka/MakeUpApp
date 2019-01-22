@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MakeUpApp</string>
+    <string name="appwidget_text">ITEM</string>
+    <string name="add_widget">Add widget</string>
+    <string name="id">id</string>
+    <string name="name">Name:</string>
+    <string name="brand">Brand:</string>
+    <string name="noInfo">No Info</string>
+    <string name="price_sign">price_sign</string>
+    <string name="price">price</string>
+    <string name="color">Color:</string>
+    <string name="description">Description:</string>
+    <string name="product_link">Product Link:</string>
+    <string name="web_link">Website Link:</string>
+    <string name="feedback">Please give your comments here...</string>
+    <string name="submit">submit</string>
+    <string name="signIn_email">Email Address</string>
+    <string name="signIn_password">Password</string>
+    <string name="signIn_button">sign in</string>
+    <string name="notAccount">Not have an account.?</string>
+    <string name="signUp_tx">Sign Up Here</string>
+    <string name="signUp_button">sign Up</string>
+    <string name="alreadyAcc">Already have an account.?</string>
+    <string name="signIn_tx">Sign In Here</string>
+    <string name="Comment">Thanks for your feedback</string>
+    <string name="home">Home</string>
+    <string name="wishlist">Wish List</string>
+    <string name="feedback1">Feedback</string>
+    <string name="logout">Logout</string>
+    <string name="Image">Image</string>
+</resources>

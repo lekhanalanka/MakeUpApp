@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height"
+                android:id="@+id/image_v"
+                android:padding="@dimen/padding"
+                android:contentDescription="@string/Image"
+                android:layout_marginTop="@dimen/marginTop"
+                android:src="@mipmap/ic_launcher" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/id"
+                android:id="@+id/id_tv"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/black"
+                android:padding="@dimen/padding"
+                android:textStyle="italic|bold"
+                android:layout_marginTop="@dimen/marginTop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:id="@+id/name_tv"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/marginTop"
+                    android:padding="@dimen/padding"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="@dimen/marginTop"/>
+        </LinearLayout>
+
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:id="@+id/favButton"
+                android:layout_marginStart="@dimen/marginTop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brand"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/orange"
+                    android:padding="@dimen/padding"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="@dimen/marginTop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/brand"
+                android:id="@+id/brand_tv"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/black"
+                android:padding="@dimen/padding"
+                android:textStyle="italic"
+                android:layout_marginTop="@dimen/marginTop"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/color"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold|italic"
+                    android:textSize="@dimen/textSize"
+                    android:padding="@dimen/padding"
+                    android:layout_marginTop="@dimen/marginTop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/noInfo"
+                    android:id="@+id/colorInfo"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:padding="@dimen/padding"
+                    android:layout_marginTop="@dimen/marginTop"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/price_sign"
+                    android:id="@+id/price_sign"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:textStyle="italic"
+                    android:padding="@dimen/padding"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/price"
+                    android:id="@+id/price"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:textStyle="italic"
+                    android:padding="@dimen/padding" />
+
+            </LinearLayout>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/cornerRadius">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="@dimen/cornerRadius">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold|italic"
+                    android:padding="@dimen/padding"
+                    android:layout_marginTop="@dimen/marginTop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/noInfo"
+                    android:id="@+id/description"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize"
+                    android:padding="@dimen/padding"
+                    android:layout_marginTop="@dimen/marginTop" />
+
+
+
+        </LinearLayout>
+</android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/cornerRadius"
+                android:layout_marginTop="@dimen/cornerRadius"
+                android:elevation="@dimen/cornerRadius">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/product_link"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold|italic"
+                        android:padding="@dimen/padding"
+                        android:layout_marginTop="@dimen/marginTop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/noInfo"
+                        android:id="@+id/product_link"
+                        android:textStyle="italic"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/textSize"
+                        android:padding="@dimen/padding"
+                        android:layout_marginTop="@dimen/marginTop" />
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/cornerRadius"
+                android:layout_marginTop="@dimen/cornerRadius"
+                android:elevation="@dimen/cornerRadius">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/web_link"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold|italic"
+                        android:padding="@dimen/padding"
+                        android:layout_marginTop="@dimen/marginTop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/noInfo"
+                        android:id="@+id/website_link"
+                        android:textStyle="italic"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/textSize"
+                        android:padding="@dimen/padding"
+                        android:layout_marginTop="@dimen/marginTop" />
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

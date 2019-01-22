@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_height"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/top"
+        android:padding="@dimen/widget_margin"
+        android:textStyle="italic"
+        android:textSize="@dimen/textSize"
+        android:hint="@string/feedback"
+        android:id="@+id/feedBack" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_button"
+        android:layout_gravity="center"
+        android:text="@string/submit"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/mar_top"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

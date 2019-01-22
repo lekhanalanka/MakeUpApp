@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wid_height"
+        android:background="@drawable/auth_theme">
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="@dimen/margin_width"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTop"
+        android:textSize="@dimen/textSize"
+        android:hint="@string/signIn_email"
+        android:textStyle="italic"
+        android:id="@+id/signUp_email_et"/>
+
+    <EditText
+        android:layout_width="@dimen/margin_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textWebPassword"
+        android:layout_marginTop="@dimen/marginTop"
+        android:textSize="@dimen/textSize"
+        android:textStyle="italic"
+        android:hint="@string/signIn_password"
+        android:id="@+id/signUp_password_et"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp_button"
+        android:text="@string/signUp_button"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/marginTop"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alreadyAcc"
+            android:layout_marginTop="@dimen/signIn_margin_top"
+            android:layout_marginStart="@dimen/signIn_margin_top"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signIn_txtview"
+            android:text="@string/signIn_tx"
+            android:textColor="@color/orange"
+            android:layout_marginStart="@dimen/marginTop"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/marginTop"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+
+
+</ScrollView>
